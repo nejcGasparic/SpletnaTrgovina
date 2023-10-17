@@ -42,3 +42,36 @@ Razlaga statusa naročila:
 - Potrjeno naročilo je naročilo, ki ga je Stranka oddala, Prodajalec pa potrdil.
 - Preklicano naročilo je naročilo, ki ga je Stranka oddala, Prodajalec pa preklical.
 - Stornirano naročilo je naročilo, ki ga je Stranka oddala, Prodajalec potrdil in naknadno storniral tj. stornirati je mogoče le potrjena naročila.
+
+### Spletni vmesnik vloge Stranka
+
+Vmesnik naj omogoča:
+
+- Prijavo in odjavo;
+- Posodobitev lastnega gesla in ostalih atributov;
+- Nakupovanje. To naj bo sestavljeno iz:
+  - Pregledovanja artiklov trgovine;
+  - Dodajanja in odstranjevanja artiklov v košarico ter spreminjanja količine v košarici;
+  - Zaključka nakupa. Tu se naj stranki prikaže povzetek kupljenih izdelkov s predračunom. Ko stranka naročilo potrdi, se to doda v čakalno vrsto neobdelanih naročil, kjer ga lahko v obravnavo prevzame Prodajalec.
+- Dostop do seznama preteklih nakupov. Uporabnik lahko vidi vsa svoja pretekla naročila: oddana, potrjena, preklicana in stornirana.
+- Uporaba vmesnika Stranka je dovoljena le preko zavarovanega kanala. Odjemalca overite z uporabniškim imenom in geslom, ki naj bosta shranjena v SUPB.
+
+### Spletni vmesnik vloge anonimnega odjemalca
+
+Vmesnik naj omogoča:
+
+- Pregledovanje artiklov preko spletnega vmesnika;
+- Registracijo preko spletnega vmesnika;
+- Uporaba vmesnika anonimnega odjemalca je preko javnega in zavarovanega kanala, pri registraciji pa nujno preklopite na zavarovan kanal. V splošnem poskrbite za ustrezno preklapljanje med omenjenima kanaloma.
+
+### Ostale zahteve
+
+Vaša rešitev naj zadosti še omenjenim zahtevam:
+
+- Vzpostavite lastno certifikatno agencijo in z njo izdelajte strežniško digitalno potrdilo. Digitalno potrdilo namestite v strežnik Apache.
+- Osebne certifikate izdelajte ročno z namenskim programom in z uporabo iste certifikatne agencije, kot ste jo uporabili za izdelavo strežniškega certifikata. Uporabite smiselna polja certifikata ter na ustrezen način povežite identiteto uporabnika v bazi z identiteto zapisano v certifikatu.
+- Pri realizaciji vseh delov prodajalne skrbno preverjajte vnose s strani odjemalca, pri čemer bodite posebej pozorni na napade injekcije kode SQL ter napade XSS.
+- Metode protokola HTTP realizirajte v skladu s priporočili standarda HTTP, kjer uporabite zahtevke z metodo GET za lahke operacije, za zahtevnejše pa zahtevke z metodo POST.
+- Poskrbite za ustrezno hrambo gesel.
+- Izdelan model podatkovne baze naj bo normaliziran do tretje normalne oblike. Vse denormalizacije morajo biti utemeljene.
+
