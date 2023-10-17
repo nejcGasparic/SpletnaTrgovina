@@ -1,0 +1,23 @@
+.body {
+    margin-right: auto;
+    width: 70%;
+    margin-top: 30px;
+}
+html,body{
+    height: 100%;
+}
+p{
+    white-space: pre-wrap;
+}
+.update-cart {
+    width: 40px;
+}
+#cart {
+    padding: 1em;
+    position: absolute;
+    top: 93px;
+    right: 0;
+    border: 1px solid black;
+    background-color: #E8E8E8;
+    min-width: 30%;
+}
