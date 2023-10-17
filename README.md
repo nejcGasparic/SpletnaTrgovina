@@ -4,10 +4,10 @@
 
 V seminarski nalogi izdelajte model spletne prodajalne z uporabo tehnologij Linux, Apache, SUPB MySQL, PHP, SSL ter certifikatov X.509. Spletna prodajalna naj ima naslednje uporabnike, pri katerih hranite spodaj navedene atribute.
 
-- Administrator: Ime, Priimek, Elektronski naslov in geslo.
-- Prodajalec: Ime, Priimek, Elektronski naslov in geslo.
-- Stranka: Ime, Priimek, Naslov (sestavljen iz ulice, hišne številke, pošte in poštne številke), Elektronski naslov, geslo.
-- Anonimni odjemalec, pri katerem ne hranite atributov.
+- **Administrator**: Ime, Priimek, Elektronski naslov in geslo.
+- **Prodajalec**: Ime, Priimek, Elektronski naslov in geslo.
+- **Stranka**: Ime, Priimek, Naslov (sestavljen iz ulice, hišne številke, pošte in poštne številke), Elektronski naslov, geslo.
+- **Anonimni odjemalec**, pri katerem ne hranite atributov.
 
 ## Osnovne storitve
 
